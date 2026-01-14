@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📦 Como Fazer Upload do Site - Siqueira Engenharia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #1E3A5F;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.2em;
+        }
+        
+        .step {
+            background: #f8f9fa;
+            border-left: 5px solid #667eea;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-right: 15px;
+        }
+        
+        .step-title {
+            color: #1E3A5F;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .step-content {
+            color: #444;
+            font-size: 1.1em;
+            margin-left: 55px;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 15px 0;
+        }
+        
+        .success {
+            background: #d4edda;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+            margin: 15px 0;
+        }
+        
+        .warning {
+            background: #f8d7da;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #dc3545;
+            margin: 15px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .file-list {
+            background: white;
+            border: 2px dashed #667eea;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        
+        .file-item {
+            padding: 8px;
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .file-icon {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #e83e8c;
+        }
+        
+        .options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .option-card {
+            background: white;
+            border: 2px solid #667eea;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .option-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .option-title {
+            color: #667eea;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .options {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📦 Guia Completo de Upload</h1>
+        <div class="subtitle">Site Siqueira Engenharia - Do GenSpark para AfiliaPage</div>
+        
+        <div class="success">
+            <strong>✅ SEU SITE ESTÁ COMPLETO E PRONTO!</strong><br>
+            Agora você só precisa fazer upload dos arquivos na AfiliaPage para o domínio <strong>siqueiraengenharia.com.br</strong> ficar online.
+        </div>
+
+        <!-- PASSO 1 -->
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">1</span>
+                Baixar os Arquivos do Site
+            </div>
+            <div class="step-content">
+                <p><strong>📥 O que você precisa baixar:</strong></p>
+                
+                <div class="file-list">
+                    <div class="file-item">
+                        <span class="file-icon">📄</span> <strong>index.html</strong> - Página inicial
+                    </div>
+                    <div class="file-item">
+                        <span class="file-icon">📄</span> <strong>servicos.html</strong> - Página de serviços
+                    </div>
+                    <div class="file-item">
+                        <span class="file-icon">📄</span> <strong>sobre.html</strong> - Sobre a empresa
+                    </div>
+                    <div class="file-item">
+                        <span class="file-icon">📄</span> <strong>blog.html</strong> - Blog/Artigos
+                    </div>
+                    <div class="file-item">
+                        <span class="file-icon">📄</span> <strong>contato.html</strong> - Contato
+                    </div>
+                    <div class="file-item">
+                        <span class="file-icon">📄</span> <strong>privacidade.html</strong> - Política de privacidade
+                    </div>
+                    <div class="file-item">
+                        <span class="file-icon">📄</span> <strong>termos.html</strong> - Termos de uso
+                    </div>
+                    <div class="file-item">
+                        <span class="file-icon">📁</span> <strong>css/style.css</strong> - Estilos do site
+                    </div>
+                    <div class="file-item">
+                        <span class="file-icon">📁</span> <strong>js/main.js</strong> - JavaScript
+                    </div>
+                    <div class="file-item">
+                        <span class="file-icon">🖼️</span> <strong>images/logo.png</strong> - Logo da empresa
+                    </div>
+                    <div class="file-item">
+                        <span class="file-icon">🖼️</span> <strong>favicon.png</strong> - Ícone do navegador
+                    </div>
+                </div>
+                
+                <div class="highlight">
+                    <strong>💡 COMO BAIXAR:</strong><br>
+                    • No GenSpark (esta interface onde você está), procure um botão <strong>"Download"</strong>, <strong>"Export"</strong> ou <strong>"Baixar Projeto"</strong><br>
+                    • OU clique com botão direito em cada arquivo e escolha "Salvar como..."<br>
+                    • OU me peça que eu crio um link de download único com tudo!
+                </div>
+            </div>
+        </div>
+
+        <!-- PASSO 2 -->
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">2</span>
+                Acessar o Painel da AfiliaPage
+            </div>
+            <div class="step-content">
+                <p><strong>🌐 Acesse sua conta:</strong></p>
+                <a href="https://app.afiliapage.com.br/" target="_blank" class="btn">Abrir AfiliaPage</a>
+                
+                <p style="margin-top: 20px;">1. Faça login com seu usuário e senha</p>
+                <p>2. Você vai ver o painel principal</p>
+            </div>
+        </div>
+
+        <!-- PASSO 3 -->
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">3</span>
+                Encontrar a Opção de Upload
+            </div>
+            <div class="step-content">
+                <p><strong>🔍 No painel da AfiliaPage, procure por:</strong></p>
+                
+                <div class="options">
+                    <div class="option-card">
+                        <div class="option-title">📂 Sites/Meus Sites</div>
+                        <p>Clique em "Sites" ou "Meus Sites" no menu lateral</p>
+                    </div>
+                    
+                    <div class="option-card">
+                        <div class="option-title">⚙️ Gerenciar/Editar</div>
+                        <p>Procure o site "Siqueira Engenharia" e clique em "Gerenciar" ou "Editar"</p>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 20px;"><strong>Dentro do site, procure uma destas opções:</strong></p>
+                <ul style="margin-left: 55px; margin-top: 10px;">
+                    <li>✅ <strong>"Importar HTML"</strong></li>
+                    <li>✅ <strong>"Editor de Código"</strong></li>
+                    <li>✅ <strong>"Gerenciador de Arquivos"</strong></li>
+                    <li>✅ <strong>"Upload de Arquivos"</strong></li>
+                    <li>✅ <strong>"HTML Personalizado"</strong></li>
+                    <li>✅ <strong>"Configurações Avançadas"</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- PASSO 4 -->
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">4</span>
+                Fazer Upload dos Arquivos
+            </div>
+            <div class="step-content">
+                <p><strong>📤 Quando encontrar a opção de upload:</strong></p>
+                
+                <p style="margin: 15px 0;">1. Clique em <code>Upload</code>, <code>Enviar Arquivos</code> ou <code>Importar</code></p>
+                <p>2. Selecione <strong>TODOS</strong> os arquivos que você baixou no Passo 1</p>
+                <p>3. <strong>IMPORTANTE:</strong> Mantenha a estrutura de pastas!</p>
+                
+                <div class="highlight">
+                    <strong>📁 Estrutura correta:</strong><br>
+                    <pre style="margin: 10px 0; font-family: monospace;">
+/
+├── index.html
+├── servicos.html
+├── sobre.html
+├── blog.html
+├── contato.html
+├── privacidade.html
+├── termos.html
+├── favicon.png
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
+└── images/
+    └── logo.png
+                    </pre>
+                </div>
+                
+                <p style="margin-top: 15px;">4. Aguarde o upload completar (pode demorar 1-2 minutos)</p>
+                <p>5. Clique em <code>Salvar</code> ou <code>Publicar</code></p>
+            </div>
+        </div>
+
+        <!-- PASSO 5 -->
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">5</span>
+                Publicar e Testar
+            </div>
+            <div class="step-content">
+                <p><strong>🚀 Depois do upload:</strong></p>
+                
+                <p style="margin: 15px 0;">1. Procure um botão <code>Publicar</code>, <code>Aplicar Alterações</code> ou <code>Salvar e Publicar</code></p>
+                <p>2. Aguarde 2-5 minutos para o site atualizar</p>
+                <p>3. Acesse: <a href="https://siqueiraengenharia.com.br" target="_blank" style="color: #667eea; font-weight: bold;">https://siqueiraengenharia.com.br</a></p>
+                
+                <div class="success">
+                    <strong>✅ Se deu certo, você vai ver:</strong><br>
+                    • Logo da Siqueira Engenharia no topo<br>
+                    • Menu: Home | Serviços | Sobre | Blog | Contato<br>
+                    • Banner: "Laudos e Vistorias Técnicas Profissionais"<br>
+                    • Botão flutuante do WhatsApp no canto<br>
+                    • Formulário de orçamento funcionando
+                </div>
+            </div>
+        </div>
+
+        <!-- OPÇÃO ALTERNATIVA -->
+        <div class="warning">
+            <h3 style="margin-bottom: 10px;">⚠️ NÃO ESTÁ ENCONTRANDO A OPÇÃO DE UPLOAD?</h3>
+            
+            <p><strong>📞 Peça ajuda ao suporte da AfiliaPage:</strong></p>
+            
+            <div style="margin: 15px 0; padding: 15px; background: white; border-radius: 8px;">
+                <strong>Mensagem para copiar e enviar:</strong>
+                <hr style="margin: 10px 0;">
+                <em>
+                    Olá! Tenho o domínio <strong>siqueiraengenharia.com.br</strong> registrado na AfiliaPage.<br><br>
+                    
+                    Criei um site HTML completo personalizado com 8 páginas, CSS, JavaScript e imagens.<br><br>
+                    
+                    Como faço para fazer upload/importar esses arquivos HTML para substituir a página padrão que está aparecendo no domínio?<br><br>
+                    
+                    Preciso manter a estrutura de pastas (css/, js/, images/).<br><br>
+                    
+                    Podem me orientar ou fazer o upload para mim?<br><br>
+                    
+                    Agradeço a ajuda!
+                </em>
+            </div>
+            
+            <p><strong>Formas de contato:</strong></p>
+            <a href="https://app.afiliapage.com.br/" target="_blank" class="btn">💬 Chat no Painel</a>
+            <a href="mailto:suporte@afiliapage.com.br" class="btn">📧 Email</a>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p><strong>🎉 Parabéns pelo seu novo site profissional!</strong></p>
+            <p style="margin-top: 10px;">Qualquer dúvida, estou aqui para ajudar! 💪</p>
+            <p style="margin-top: 20px; font-size: 0.9em; color: #999;">
+                Site criado para: <strong>Siqueira Engenharia</strong><br>
+                Especializada em Laudos Técnicos e Vistorias de Imóveis<br>
+                📱 (11) 9 3742-6549 | 📍 São Paulo - SP
+            </p>
+        </div>
+    </div>
+</body>
+</html>

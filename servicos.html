@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça todos os serviços da Siqueira Engenharia: Vistorias Residenciais, Comerciais, para Reformas, Laudos Técnicos e Consultoria especializada.">
+    <meta name="keywords" content="vistoria residencial, vistoria comercial, laudo técnico, consultoria reforma, vistoria apartamento São Paulo">
+    <title>Serviços - Siqueira Engenharia | Laudos e Vistorias Técnicas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navegação -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html" style="display: flex; align-items: center; gap: 0.75rem;">
+                        <img src="images/logo.png" alt="Siqueira Engenharia Logo">
+                        <span>Siqueira Engenharia</span>
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servicos.html" class="active">Serviços</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                <div class="header-phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>(11) 9 6738-2010</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Nossos Serviços</h1>
+            <p>Soluções completas em laudos técnicos e vistorias para seu imóvel</p>
+        </div>
+    </section>
+
+    <!-- Serviços Detalhados -->
+    <section class="services-detailed">
+        <div class="container">
+            <!-- Vistoria Residencial -->
+            <div class="service-detail" id="residencial">
+                <div class="service-detail-content">
+                    <div class="service-detail-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="service-detail-text">
+                        <h2>Vistoria Residencial</h2>
+                        <p class="service-description">
+                            Análise técnica completa de apartamentos, casas e condomínios. Ideal para compra, venda ou locação de imóveis residenciais.
+                        </p>
+                        
+                        <h3>Para quem serve?</h3>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Compradores que desejam conhecer o estado real do imóvel</li>
+                            <li><i class="fas fa-check"></i> Vendedores que querem valorizar o imóvel com documentação técnica</li>
+                            <li><i class="fas fa-check"></i> Locatários e locadores para registro de estado do imóvel</li>
+                            <li><i class="fas fa-check"></i> Síndicos e administradoras de condomínios</li>
+                        </ul>
+
+                        <h3>O que está incluído?</h3>
+                        <div class="checklist-grid">
+                            <div class="checklist-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Inspeção visual completa</span>
+                            </div>
+                            <div class="checklist-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Análise de estrutura</span>
+                            </div>
+                            <div class="checklist-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Verificação elétrica</span>
+                            </div>
+                            <div class="checklist-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Sistema hidráulico</span>
+                            </div>
+                            <div class="checklist-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Revestimentos e acabamentos</span>
+                            </div>
+                            <div class="checklist-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Esquadrias e vidros</span>
+                            </div>
+                            <div class="checklist-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Infiltrações e umidade</span>
+                            </div>
+                            <div class="checklist-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Relatório fotográfico</span>
+                            </div>
+                        </div>
+
+                        <div class="service-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Tempo estimado:</strong>
+                                    <span>2 a 4 horas (dependendo do tamanho do imóvel)</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-file-alt"></i>
+                                <div>
+                                    <strong>Entrega do relatório:</strong>
+                                    <span>3 a 5 dias úteis</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-tag"></i>
+                                <div>
+                                    <strong>Valor:</strong>
+                                    <span>Sob consulta (varia conforme metragem)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary" onclick="openOrcamentoModalWithService('residencial')">
+                            <i class="fas fa-file-invoice"></i> Solicitar Orçamento
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vistoria Comercial -->
+            <div class="service-detail" id="comercial">
+                <div class="service-detail-content reverse">
+                    <div class="service-detail-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="service-detail-text">
+                        <h2>Vistoria Comercial</h2>
+                        <p class="service-description">
+                            Inspeção técnica especializada para estabelecimentos comerciais, escritórios, lojas e espaços empresariais.
+                        </p>
+                        
+                        <h3>O que é analisado?</h3>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Estrutura do edifício e fundações</li>
+                            <li><i class="fas fa-check"></i> Instalações elétricas comerciais (trifásica)</li>
+                            <li><i class="fas fa-check"></i> Sistema de climatização e ventilação</li>
+                            <li><i class="fas fa-check"></i> Segurança contra incêndio</li>
+                            <li><i class="fas fa-check"></i> Acessibilidade (NBR 9050)</li>
+                            <li><i class="fas fa-check"></i> Conformidade com normas técnicas</li>
+                            <li><i class="fas fa-check"></i> Layout e distribuição de espaços</li>
+                            <li><i class="fas fa-check"></i> Condições gerais de conservação</li>
+                        </ul>
+
+                        <h3>Ideal para:</h3>
+                        <div class="tags-container">
+                            <span class="tag">Lojas e Comércios</span>
+                            <span class="tag">Escritórios</span>
+                            <span class="tag">Restaurantes</span>
+                            <span class="tag">Clínicas</span>
+                            <span class="tag">Salões</span>
+                            <span class="tag">Academias</span>
+                            <span class="tag">Galpões</span>
+                        </div>
+
+                        <div class="service-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Tempo de execução:</strong>
+                                    <span>4 a 8 horas (conforme complexidade)</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-file-alt"></i>
+                                <div>
+                                    <strong>Entrega:</strong>
+                                    <span>5 a 7 dias úteis</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary" onclick="openOrcamentoModalWithService('comercial')">
+                            <i class="fas fa-file-invoice"></i> Solicitar Orçamento
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Laudo Técnico -->
+            <div class="service-detail" id="laudo">
+                <div class="service-detail-content reverse">
+                    <div class="service-detail-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="service-detail-text">
+                        <h2>Laudo Técnico</h2>
+                        <p class="service-description">
+                            Documentação técnica oficial elaborada por engenheiro credenciado pelo CREA, com validade jurídica para diversas finalidades.
+                        </p>
+                        
+                        <h3>Quando é necessário?</h3>
+                        <ul class="service-list">
+                            <li><i class="fas fa-balance-scale"></i> Processos judiciais e perícias</li>
+                            <li><i class="fas fa-balance-scale"></i> Financiamento imobiliário</li>
+                            <li><i class="fas fa-balance-scale"></i> Regularização de imóveis</li>
+                            <li><i class="fas fa-balance-scale"></i> Comprovação de segurança estrutural</li>
+                            <li><i class="fas fa-balance-scale"></i> Documentação para seguros</li>
+                            <li><i class="fas fa-balance-scale"></i> Aprovação de reformas na prefeitura</li>
+                        </ul>
+
+                        <h3>Tipos de Laudos que emitimos:</h3>
+                        <div class="laudo-types">
+                            <div class="laudo-type-card">
+                                <i class="fas fa-building"></i>
+                                <h4>Laudo Estrutural</h4>
+                                <p>Avaliação da estrutura, fundações, vigas, pilares e lajes.</p>
+                            </div>
+                            <div class="laudo-type-card">
+                                <i class="fas fa-wheelchair"></i>
+                                <h4>Laudo de Acessibilidade</h4>
+                                <p>Conformidade com NBR 9050 para acessibilidade universal.</p>
+                            </div>
+                            <div class="laudo-type-card">
+                                <i class="fas fa-fire-extinguisher"></i>
+                                <h4>Laudo de Incêndio</h4>
+                                <p>Análise das condições de segurança contra incêndio.</p>
+                            </div>
+                            <div class="laudo-type-card">
+                                <i class="fas fa-bolt"></i>
+                                <h4>Laudo Elétrico</h4>
+                                <p>Avaliação das instalações elétricas e conformidade com NR-10.</p>
+                            </div>
+                            <div class="laudo-type-card">
+                                <i class="fas fa-tint"></i>
+                                <h4>Laudo de Infiltração</h4>
+                                <p>Identificação de causas e origem de infiltrações.</p>
+                            </div>
+                            <div class="laudo-type-card">
+                                <i class="fas fa-home"></i>
+                                <h4>Laudo de Habitabilidade</h4>
+                                <p>Condições de uso e habitabilidade do imóvel.</p>
+                            </div>
+                        </div>
+
+                        <div class="alert-box success">
+                            <i class="fas fa-certificate"></i>
+                            <p><strong>Validade Legal:</strong> Todos os nossos laudos são assinados por engenheiro com registro no CREA e possuem validade jurídica.</p>
+                        </div>
+
+                        <button class="btn btn-primary" onclick="openOrcamentoModalWithService('laudo')">
+                            <i class="fas fa-file-invoice"></i> Solicitar Orçamento
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Precisa de mais informações?</h2>
+            <p>Entre em contato conosco e tire todas as suas dúvidas</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/5511937426549?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços." class="btn btn-whatsapp btn-large" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Fale pelo WhatsApp
+                </a>
+                <a href="contato.html" class="btn btn-secondary btn-large">
+                    <i class="fas fa-envelope"></i> Entre em Contato
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Siqueira Engenharia Logo" style="max-width: 200px;">
+                    </div>
+                    <p>Laudos técnicos e vistorias de imóveis com credibilidade e precisão.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/eng.biancasiqueira/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/bianca-de-siqueira-santos/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Menu Rápido</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Serviços</h4>
+                    <ul class="footer-links">
+                        <li><a href="servicos.html#residencial">Vistoria Residencial</a></li>
+                        <li><a href="servicos.html#comercial">Vistoria Comercial</a></li>
+                        <li><a href="servicos.html#laudo">Laudo Técnico</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contato</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(11) 9 6738-2010</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <span>(11) 9 3742-6549</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Vila Santa Clara - São Paulo/SP</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Siqueira Engenharia. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="privacidade.html">Política de Privacidade</a>
+                    <span>|</span>
+                    <a href="termos.html">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5511937426549?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20vistoria." class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Modal de Orçamento -->
+    <div class="modal" id="orcamentoModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h2>Solicitar Orçamento</h2>
+                <p>Preencha o formulário abaixo e entraremos em contato em breve</p>
+            </div>
+            <form id="orcamentoForm" class="orcamento-form">
+                <div class="form-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone/WhatsApp *</label>
+                        <input type="tel" id="telefone" name="telefone" required placeholder="(11) 9 1234-5678">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="tipoVistoria">Tipo de Vistoria *</label>
+                    <select id="tipoVistoria" name="tipoVistoria" required>
+                        <option value="">Selecione o tipo de vistoria</option>
+                        <option value="residencial">Vistoria Residencial</option>
+                        <option value="comercial">Vistoria Comercial</option>
+                        <option value="reforma">Vistoria para Reforma</option>
+                        <option value="laudo">Laudo Técnico</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço do Imóvel (Cidade/Estado) *</label>
+                    <input type="text" id="endereco" name="endereco" required placeholder="Ex: São Paulo - SP">
+                </div>
+                <div class="form-group">
+                    <label for="descricao">Descrição Breve do Problema</label>
+                    <textarea id="descricao" name="descricao" rows="4" placeholder="Conte-nos mais sobre o que você precisa..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="horario">Melhor Horário para Contato</label>
+                    <select id="horario" name="horario">
+                        <option value="indiferente">Indiferente</option>
+                        <option value="manha">Manhã</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="whatsappContato" name="whatsappContato" checked>
+                        <span>Desejo contato via WhatsApp</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-paper-plane"></i> Enviar Orçamento
+                </button>
+            </form>
+            <div id="successMessage" class="success-message" style="display: none;">
+                <i class="fas fa-check-circle"></i>
+                <h3>Recebemos seu pedido!</h3>
+                <p>Entraremos em contato em breve.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
